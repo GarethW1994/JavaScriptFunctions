@@ -1,7 +1,7 @@
 var isWeekday = function(day) {
-  var weekDay = day.endsWith('day');
+  var weekDay = day.startsWith('M');
 
-  console.log(weekDay);
+  console.log('Is it a week day: ' + weekDay);
 }
 
-isWeekday('Tuesday');
+isWeekday("M");
