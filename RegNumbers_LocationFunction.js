@@ -1,10 +1,9 @@
-var numberPlate = ["CA 182736", "CY 523519", "CJ 812328"];
 
-countRegNumber = function(regNumber) {
-  var splitString = regNumber[0].split(" ", 6);
-  var countNum = splitString[0].length;
+var countRegNumber = function(regNumber) {
+  var splitString = regNumber.split(",");
   console.log(splitString);
-  console.log(countNum);
 };
 
-countRegNumber(numberPlate)
+//countRegNumber(numberPlate);
+countRegNumber("CA 182736,CY 523519,CJ 812328")
+countRegNumber("CA 42665, AA 12 RT GP");
