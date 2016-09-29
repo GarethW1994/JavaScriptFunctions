@@ -1,6 +1,12 @@
+
 var regCheck = function(regNum, location) {
-  var isGP = regNum.includes(location);
-  console.log('Is this registration number for GP: ' + isGP);
+  var checkRegLocation = regNum.includes(location);
+
+  return checkRegLocation;
 }
 
-regCheck('DV 23 NB GP', 'GP');
+var isGP  = regCheck('DV 23 NB GP', 'GP');
+var isMP = regCheck('DV 23 LP GP', 'MP');
+
+console.log(isGP);
+console.log(isMP);
