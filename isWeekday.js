@@ -5,7 +5,7 @@ var isWeekday = function(day) {
 
   var determineWeekday = weekDay.startsWith('S')
 
-  return true;
+  return determineWeekday;
 }
 
 const date = new Date();
