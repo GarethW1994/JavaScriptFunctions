@@ -1,6 +1,15 @@
 var isTuesday = function(day) {
-  var checkDay = day.startsWith('Tu');
-  console.log(checkDay);
+  var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var todaysDate = date.getDay();
+  var Today = weekDays[todaysDate];
+
+  var checkDay = Today === day;
+
+  return checkDay;
 }
 
-isTuesday('Tuesday');
+const date = new Date();
+
+console.log(isTuesday('Tuesday'));
+console.log(isTuesday('Monday'));
+console.log(isTuesday('Thursday'));

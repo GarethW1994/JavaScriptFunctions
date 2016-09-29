@@ -1,7 +1,13 @@
 var isWeekday = function(day) {
-  var weekDay = day.startsWith('M');
+  var week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-  console.log('Is it a week day: ' + weekDay);
+  var weekDay = week[day];
+
+  var determineWeekday = weekDay.startsWith('S')
+
+  return true;
 }
 
-isWeekday("M");
+const date = new Date();
+
+console.log('Is it a week day: ' + isWeekday(date.getDay()));

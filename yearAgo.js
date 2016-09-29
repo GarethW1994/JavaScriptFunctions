@@ -1,8 +1,7 @@
-var thisYear = new Date();
-
 var yearsAgo = function(year) {
   var yearAgo = thisYear.getFullYear() - year;
-  console.log("That was " + yearAgo + " years ago.");
+  return yearAgo;
 }
 
-yearsAgo(2010);
+var thisYear = new Date();
+console.log("That was " + yearsAgo(2010) + " years ago.");

@@ -1,30 +1,30 @@
 var isFromBellville = function(numberPlate){
   var Bellville = numberPlate.startsWith('CY');
-  console.log("Is this person from Bellville - " + Bellville);
+  return Bellville;
 };
 
 var isFromPaarl = function(numberPlate) {
   var Paarl = numberPlate.startsWith('CJ');
-  console.log("Is this person from Paarl - " + Paarl);
+  return Paarl;
 };
 
 var isFromCapeTown = function(numberPlate) {
   var CapeTown = numberPlate.startsWith('CA');
-  console.log("Is this person from Cape Town - " + CapeTown);
+  return CapeTown;
 };
 
 var isFromGauteng = function(numberPlate) {
   var Gauteng = numberPlate.endsWith('GP');
-  console.log("Is this person from Gauteng - " + Gauteng);
+  return Gauteng;
 };
 
 var isFromLimpopo = function(numberPlate) {
   var Limpopo = numberPlate.endsWith('L');
-  console.log("Is this person from Limpopo - " + Limpopo);
+  return Limpopo;
 };
 
-isFromBellville('CY 123 123');
-isFromPaarl('CJ 123 123');
-isFromCapeTown('CA 123 123');
-isFromGauteng('DT 123 45 GP');
-isFromLimpopo('DTR 123 56 L');
+console.log(isFromBellville('CY 123 123'));
+console.log(isFromPaarl('CJ 123 123'));
+console.log(isFromCapeTown('CA 123 123'));
+console.log(isFromGauteng('DT 123 45 GP'));
+console.log(isFromLimpopo('DTR 123 56 L'));
